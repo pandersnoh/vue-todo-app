@@ -74,9 +74,10 @@
                   <input
                     type="checkbox"
                     class="todo-check"
+                    :id="'todo-check' + todo.id"
                     :value="todo.id"
                     v-model="todo.finished" />                         
-                  <label for="todo-check"></label>
+                  <label :for="'todo-check' + todo.id"></label>
                   <div class="todo-txtdate">
                     <strong
                       @dblclick="todo.titleHidden = true"
@@ -426,7 +427,9 @@ export default {
     transform: translateY(30px);
   }  
   .todo-txtdate {
-      margin-left: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    max-width: 100%;
       strong {
         position: relative;
         display: block;
@@ -435,10 +438,6 @@ export default {
         letter-spacing: -0.03em;
         color: #444444;
         line-height: 180%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 160px;
         &::after {
           content: ' ';
           position: absolute;
@@ -596,16 +595,19 @@ export default {
           align-items: center;
           min-width: 180px;
           input[type='checkbox'] {
+            display: none;
+          }
+          input[type='checkbox'] + label {
             width: 30px;
             height: 30px;
             appearance: none;
-            background-color: #ffffff;
-            box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
-            cursor: pointer;
+            background-image: url('~/assets/checkbox_sprite.png');
+            background-size: cover;
+            background-position: -31px 0px;
+            cursor: pointer;            
           }
-          input[type='checkbox']:checked {
-            appearance: revert;
-            box-shadow: none;
+          input[type='checkbox']:checked + label {
+            background-position: 0px 0px;
           }                   
         }
         .todo-buttons {
@@ -619,7 +621,8 @@ export default {
             border-radius: 6px;
             color: #ffffff;
             font-size: 28px;   
-            transition: background-color 0.3s;        
+            transition: background-color 0.3s;    
+            text-align: center;    
           }
           .open-memo {
             background-color: #bec7d4;
@@ -722,6 +725,9 @@ export default {
     }
     .todo-txtdate {
       strong {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         font-size: 12px;
       }
       span {
@@ -739,11 +745,17 @@ export default {
       padding: 5px 8px;
       min-height: auto;
       dt {
+        .todo-title {
+          input[type=checkbox] {
+            width: 22px;
+            height: 22px;
+          }
+        }
         .todo-buttons {
           button {
-            width: 40px;
-            height: 40px;
-            font-size: 1.350rem;
+            width: 30px;
+            height: 30px;
+            font-size: 1.150rem;
           }
         }
       }
