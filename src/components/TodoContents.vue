@@ -435,6 +435,10 @@ export default {
         letter-spacing: -0.03em;
         color: #444444;
         line-height: 180%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 160px;
         &::after {
           content: ' ';
           position: absolute;
@@ -510,6 +514,11 @@ export default {
         position: relative; 
         transition: opacity 0.5s;
         opacity: 0.5;
+        &::after {
+          content: '';
+          display: block;
+          clear: both;
+        }
         &:hover {
           opacity: 1;
         }        
@@ -527,14 +536,17 @@ export default {
         input[id="select-all"]:checked + label {
           opacity: 1;
         }           
-        span {
-          display: block;
-          margin-top: -30px;
-          margin-left: 30px;
-          font-weight: 300;
-        }
         i {
           font-size: 26px;
+          display: inline-flex;
+          float: left;
+        }
+        span {
+          margin-left: 5px;
+          font-weight: 300;
+          float: left;
+          line-height: 220%;
+          font-size: 12px;
         }
       }
     }
@@ -598,6 +610,8 @@ export default {
         }
         .todo-buttons {
           display: flex;
+          justify-content: center;
+          align-items: center;
           button {
             width: 50px;
             height: 50px;
@@ -712,6 +726,13 @@ export default {
       }
       span {
         font-size: 10px;
+      }
+    }
+    .todo-sorting {
+      .sorting-right {
+        button {
+          font-size: 12px;
+        }
       }
     }
     dl {
