@@ -623,7 +623,9 @@ export default {
             font-size: 28px;   
             transition: background-color 0.3s;    
             text-align: center;
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
           .open-memo {
             background-color: #bec7d4;
@@ -745,6 +747,10 @@ export default {
     dl {
       padding: 5px 8px;
       min-height: auto;
+      &:hover {
+        background-color: none;
+        border: none;
+      }
       dt {
         .todo-title {
           input[type=checkbox] {
