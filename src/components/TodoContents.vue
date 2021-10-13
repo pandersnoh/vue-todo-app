@@ -761,7 +761,7 @@ export default {
         .todo-buttons {
           button {
             width: 30px;
-            height: 30px;
+            height: 35px;
             font-size: 1.150rem;
           }
         }

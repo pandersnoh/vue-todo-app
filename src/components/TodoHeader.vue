@@ -13,7 +13,8 @@
   }
   @media (max-width: 576px) {
     h1 {
-      font-size: 2.590rem;
+      font-size: 2.290rem;
+      padding: 50px 0 20px;
     }
   }  
 </style>
