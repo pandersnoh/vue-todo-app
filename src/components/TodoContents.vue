@@ -748,7 +748,7 @@ export default {
       padding: 5px 8px;
       min-height: auto;
       &:hover {
-        background-color: none;
+        background-color: #e0e8f5;
         border: none;
       }
       dt {
