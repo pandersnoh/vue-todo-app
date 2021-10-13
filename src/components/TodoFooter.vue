@@ -65,6 +65,7 @@
           margin: 0px;
           p {
             text-align: center;
+            font-size: 0.855rem;
           }
         }
       }

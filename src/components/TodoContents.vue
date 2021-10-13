@@ -762,7 +762,7 @@ export default {
           button {
             width: 30px;
             height: 35px;
-            font-size: 1.150rem;
+            font-size: 1.250rem;
           }
         }
       }
