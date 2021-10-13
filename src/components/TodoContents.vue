@@ -441,10 +441,10 @@ export default {
         &::after {
           content: ' ';
           position: absolute;
-          top: 50%;
+          top: 47%;
           left: 0;
           width: 0;
-          height: 2px;
+          height: 1px;
           transition: width 0.2s;
         }   
       }           
@@ -622,7 +622,8 @@ export default {
             color: #ffffff;
             font-size: 28px;   
             transition: background-color 0.3s;    
-            text-align: center;    
+            text-align: center;
+            display: inline-block;
           }
           .open-memo {
             background-color: #bec7d4;
