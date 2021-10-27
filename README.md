@@ -6,7 +6,7 @@ Vue.js를 이용하여 제작한 ToDo 애플리케이션 입니다.<br/>
 구현결과 : https://frosty-lichterman-bf0c28.netlify.app/
 
 # 작업개요
-
+- 제작년도 : 2021년
 - 사용언어 : Vue.js, SASS(SCSS), Git/GitHub<br/>
 - 패키지 : Webpack
 - UI 프레임워크 : Bootstrap
