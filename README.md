@@ -15,7 +15,7 @@ Vue.js를 이용하여 제작한 ToDo 애플리케이션 입니다.<br/>
 # 주요기능
 
 - Header영역, Contents영역, Footer영역별로 컴포넌트 분리
-- methods 단계에서 push를 활용하여 데이터 배열에 ToDo 내용 추가/삭제하는 기능 구현
+- methods 단계에서 push를 이용하여 데이터 배열에 ToDo 내용 추가
 - Computed 단계에서 filter를 활용하여 "전체/진행중/완료" 별로 리스트 필터링 기능 구현
 - transition-group를 활용하여 모션 효과 구현
 - ToDo별로 세부적인 메모를 기록할 수 있는 항목 구현
