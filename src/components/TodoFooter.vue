@@ -1,5 +1,10 @@
 <template>
   <footer>
+    <p>
+      GitHub 저장소 : <a
+        href="https://github.com/pandersnoh/vue-todo-app"
+        target="_blank">https://github.com/pandersnoh/vue-todo-app</a>
+    </p>
     <dl>
       <dt>
         <img
@@ -12,13 +17,6 @@
           (C){{ new Date().getFullYear() }} SEUNGMIN ROH all rights reserved.
         </p>
       </dd>
-      <dd>
-        <p>
-          GitHub 저장소 : <a
-            href="https://github.com/pandersnoh/vue-todo-app"
-            target="_blank">https://github.com/pandersnoh/vue-todo-app</a>
-        </p>        
-      </dd>        
     </dl>
   </footer>
 </template>
