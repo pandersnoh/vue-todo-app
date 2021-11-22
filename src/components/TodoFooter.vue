@@ -11,12 +11,14 @@
           이 프로젝트는 <strong>Vue.js</strong>를 기반으로 제작되었습니다.<br />
           (C){{ new Date().getFullYear() }} SEUNGMIN ROH all rights reserved.
         </p>
+      </dd>
+      <dd>
         <p>
           GitHub 저장소 : <a
             href="https://github.com/pandersnoh/vue-todo-app"
             target="_blank">https://github.com/pandersnoh/vue-todo-app</a>
-        </p>
-      </dd>
+        </p>        
+      </dd>        
     </dl>
   </footer>
 </template>
