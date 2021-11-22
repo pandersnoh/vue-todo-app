@@ -1,10 +1,5 @@
 <template>
   <footer>
-    <p>
-      GitHub 저장소 : <a
-        href="https://github.com/pandersnoh/vue-todo-app"
-        target="_blank">https://github.com/pandersnoh/vue-todo-app</a>
-    </p>
     <dl>
       <dt>
         <img
@@ -18,6 +13,11 @@
         </p>
       </dd>
     </dl>
+    <p style="margin-top: 40px;">
+      GitHub 저장소 : <a
+        href="https://github.com/pandersnoh/vue-todo-app"
+        target="_blank">https://github.com/pandersnoh/vue-todo-app</a>
+    </p>    
   </footer>
 </template>
 
