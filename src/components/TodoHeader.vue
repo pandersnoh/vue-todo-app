@@ -11,7 +11,7 @@
     text-shadow: 2px 2px 1px rgba(0,0,0,0.25);
     padding: 80px 0 35px;
   }
-  @media (max-width: 576px) {
+  @media (max-width: 767px) {
     h1 {
       font-size: 2.290rem;
       padding: 50px 0 20px;
