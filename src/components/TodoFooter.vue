@@ -26,7 +26,7 @@
     padding: 60px 0;
     color: #ffffff;
     text-align: center;
-    text-shadow: 2px 2px 1px rgba(0,0,0,0.25);
+    @include txtshadow(2px, 2px, 1px, rgba(0,0,0,0.25));
     dl {
       @include flex(center, center);
       dt {
