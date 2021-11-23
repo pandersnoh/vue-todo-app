@@ -316,35 +316,6 @@ export default {
 <style scoped lang="scss">
 @import "~/scss/main.scss";
 
-@mixin flex($justify, $align) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}
-
-@mixin txtshadow($hshadow, $vshadow, $blur, $color) {
-  text-shadow: $hshadow $vshadow $blur $color;
-}
-
-@mixin boxshadow($hoffset, $voffset, $blur, $spread, $color) {
-  box-shadow: $hoffset $voffset $blur $spread $color;
-}
-
-@mixin padding2($ydir, $xdir) {
-  padding: $ydir $xdir;
-}
-
-@mixin padding3($top, $xy, $bottom) {
-  padding: $top $xy $bottom;
-}
-
-@mixin padding4($top, $right, $bottom, $left) {
-  padding-top: $top;
-  padding-right: $right;
-  padding-bottom: $bottom;
-  padding-left: $left;
-}
-
   .todo-date {
     display: flex;
     width: 100%;
