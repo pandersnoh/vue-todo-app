@@ -56,7 +56,7 @@
     }
   }
   @media (max-width: 576px) {
-    footer {
+    footer {      
       dl {
         display: block;
         dt {
@@ -67,12 +67,12 @@
         dd {
           display: block;
           margin: 0px;
-          p {
-            text-align: center;
-            font-size: 0.855rem;
-          }
         }
       }
+      p {
+        text-align: center;
+        font-size: 0.855rem;
+      }      
     }
   }
 </style>
