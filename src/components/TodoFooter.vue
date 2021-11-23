@@ -28,16 +28,13 @@
     text-align: center;
     text-shadow: 2px 2px 1px rgba(0,0,0,0.25);
     dl {
-      display: flex;
-      justify-content: center;
+      @include flex(center, center);
       dt {
         display: flex;
       }
       dd {
-        display: flex;
+        @include flex(left, center);
         flex-grow: 0;
-        justify-content: left;
-        align-items: center;
         margin-left: 10px;
         p {
           text-align: left;
