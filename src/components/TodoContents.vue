@@ -316,10 +316,10 @@ export default {
 <style scoped lang="scss">
 @import "~/scss/main.scss";
 
-@mixin flex($display, $justify, $align) {
-	$display: $display;
-	$justify: $justify;
-	$align: $align;
+@mixin flex($justify, $align) {
+	display: flex;
+	justify: $justify;
+	align: $align;
 }
 
   .todo-date {
@@ -327,7 +327,7 @@ export default {
     width: 100%;
     margin-bottom: 10px;
     .date-left {
-      @include flex(flex, left, center);
+      @include flex(left, center);
       flex-grow: 1;
       text-shadow: 2px 2px 1px rgba(0,0,0,0.25);
       color: #fff;
@@ -505,7 +505,7 @@ export default {
     width: 100%;
     margin: 10px 0;
     .sorting-left {
-      @include flex(flex, left, center);
+      @include flex(left, center);
       flex-grow: 1;
       label {
         color: #000000;
@@ -552,7 +552,7 @@ export default {
       }
     }
     .sorting-right {
-      @include flex(flex, right, center);
+      @include flex(right, center);
       button {
         border: 0px;
         background: none;
@@ -584,10 +584,10 @@ export default {
     }
     dt {
       position: relative;
-      @include flex(flex, center, center);
+      @include flex(center, center);
       height: 50px;
         .todo-title {
-          @include flex(flex, left, center);
+          @include flex(left, center);
           flex-grow: 1;
           min-width: 180px;
           input[type='checkbox'] {
@@ -607,7 +607,7 @@ export default {
           }                   
         }
         .todo-buttons {
-          @include flex(flex, center, center);
+          @include flex(center, center);
           button {
             width: 50px;
             height: 50px;
@@ -617,7 +617,7 @@ export default {
             font-size: 28px;   
             transition: background-color 0.3s;    
             text-align: center;
-            @include flex(flex, center, center);
+            @include flex(center, center);
           }
           .open-memo {
             background-color: #bec7d4;
