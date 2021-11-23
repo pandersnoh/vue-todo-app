@@ -590,7 +590,7 @@ export default {
             height: 30px;
             appearance: none;
             background-image: url('~/assets/checkbox_sprite.png');
-            background-size: cover;
+            background-size: 64px;
             background-position: -31px 0px;
             cursor: pointer;            
           }
@@ -698,7 +698,7 @@ export default {
 
 
 
-  @media (max-width: 576px) {
+  @media (max-width: 767px) {
     .todo-date {
       .date-left p {
         font-size: 14px;
