@@ -330,6 +330,21 @@ export default {
 	box-shadow: $hoffset $voffset $blur $spread $color;
 }
 
+@mixin padding2($ydir, $xdir) {
+  padding: $ydir $xdir;
+}
+
+@mixin padding3($top, $xy, $bottom) {
+  padding: $top $xy $bottom;
+}
+
+@mixin padding4($top, $right, $bottom, $left) {
+	padding-top: $top;
+	padding-right: $right;
+	padding-bottom: $bottom;
+	padding-left: $left;
+}
+
   .todo-date {
     display: flex;
     width: 100%;
@@ -355,7 +370,7 @@ export default {
         background-color: #222222;
         color: #fff;
         border: 0px;
-        padding: 5px 20px;
+        @include padding2(5px, 20px);
         margin-right: 10px;
         letter-spacing: -0.03em;
         transition: background-color 0.3s;
@@ -575,12 +590,11 @@ export default {
     }
   }
   dl {
-    padding: 0 10px;
     margin-bottom: 0px;
     background-color: #e0e8f5;
     min-height: 70px;
     margin-top: 10px;
-    padding: 14px 10px;
+    @include padding2(14px, 10px);
     border: 1px solid #e0e8f5;
     border-radius: 8px;
     transition: background-color 0.3s;
@@ -675,12 +689,11 @@ export default {
           background-color: #333333;
           border: 0px;
           color: #ffffff;
-          padding: 6px 10px;
-          border-radius: 5px;
+          @include padding2(6px, 10px);
           margin-right: 5px;
           transition: background-color 0.3s;
           &:hover {
-            background-color: #474747
+            background-color: #474747;
           }          
         }          
       }
@@ -692,7 +705,7 @@ export default {
   }
   .todo-remains {
     text-align: center;
-    padding: 20px 0px 15px;
+    @include padding3(20px, 0px, 15px);
     margin-top: 20px;
     font-size: 16px;
     color: #666666;
