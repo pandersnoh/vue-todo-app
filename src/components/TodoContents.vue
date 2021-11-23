@@ -322,14 +322,22 @@ export default {
 	align-items: $align;
 }
 
+@mixin txtshadow($hshadow, $vshadow, $blur, $color) {
+	text-shadow: $hshadow $vshadow $blur $color;
+}
+
+@mixin boxshadow($hoffset, $voffset, $blur, $spread, $color) {
+	box-shadow: $hoffset $voffset $blur $spread $color;
+}
+
   .todo-date {
     display: flex;
     width: 100%;
     margin-bottom: 10px;
     .date-left {
       @include flex(left, center);
+      @include txtshadow(2px, 2px, 1px, rgba(0,0,0,0.25));
       flex-grow: 1;
-      text-shadow: 2px 2px 1px rgba(0,0,0,0.25);
       color: #fff;
       font-size: 18px;
       margin-left: 10px;
@@ -371,8 +379,7 @@ export default {
     padding: 20px;
     background-color: #f4f7fc;
     border-radius: 10px;
-    -webkit-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.38); 
-    box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.38);
+    @include boxshadow(7px, 7px, 10px, -5px, rgba(0,0,0,0.38));
   }
   .todo-list-container {
     position: relative;
