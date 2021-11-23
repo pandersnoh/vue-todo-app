@@ -316,14 +316,18 @@ export default {
 <style scoped lang="scss">
 @import "~/scss/main.scss";
 
+@mixin flex($display, $justify, $align) {
+	$display: $display;
+	$justify: $justify;
+	$align: $align;
+}
+
   .todo-date {
     display: flex;
     width: 100%;
     margin-bottom: 10px;
     .date-left {
-      display: flex;
-      justify-content: left;
-      align-items: center;
+      @include flex(flex, left, center);
       flex-grow: 1;
       text-shadow: 2px 2px 1px rgba(0,0,0,0.25);
       color: #fff;
@@ -501,9 +505,7 @@ export default {
     width: 100%;
     margin: 10px 0;
     .sorting-left {
-      display: flex;
-      justify-content: left;
-      align-items: center;
+      @include flex(flex, left, center);
       flex-grow: 1;
       label {
         color: #000000;
@@ -550,9 +552,7 @@ export default {
       }
     }
     .sorting-right {
-      display: flex;
-      justify-content: right;
-      align-items: center;
+      @include flex(flex, right, center);
       button {
         border: 0px;
         background: none;
@@ -584,15 +584,11 @@ export default {
     }
     dt {
       position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex, center, center);
       height: 50px;
         .todo-title {
-          display: flex;
+          @include flex(flex, left, center);
           flex-grow: 1;
-          justify-content: left;
-          align-items: center;
           min-width: 180px;
           input[type='checkbox'] {
             display: none;
@@ -611,9 +607,7 @@ export default {
           }                   
         }
         .todo-buttons {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flex(flex, center, center);
           button {
             width: 50px;
             height: 50px;
@@ -623,9 +617,7 @@ export default {
             font-size: 28px;   
             transition: background-color 0.3s;    
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(flex, center, center);
           }
           .open-memo {
             background-color: #bec7d4;
