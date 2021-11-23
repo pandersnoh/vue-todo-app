@@ -52,9 +52,7 @@ body {
   background-color: #e07990;
   h1 {
     color: $color--white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
   }
   a {
     color: #fff;
