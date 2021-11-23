@@ -1,7 +1,7 @@
 # Vue.js를 활용한 ToDo 애플리케이션
 
 Vue.js를 이용하여 제작한 ToDo 애플리케이션 입니다.<br/>
-포트폴리오 및 학습 용도로 제작하였습니다.<br/>
+개인 포트폴리오 및 Vue.js 학습 용도로 제작하였습니다.<br/>
 
 구현결과 : https://frosty-lichterman-bf0c28.netlify.app/
 
