@@ -318,8 +318,8 @@ export default {
 
 @mixin flex($justify, $align) {
 	display: flex;
-	justify: $justify;
-	align: $align;
+	justify-content: $justify;
+	align-items: $align;
 }
 
   .todo-date {
