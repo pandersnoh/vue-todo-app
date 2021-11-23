@@ -22,6 +22,8 @@
 </template>
 
 <style scoped lang="scss">
+@import "~/scss/main.scss";
+
   footer {
     padding: 60px 0;
     color: #ffffff;
