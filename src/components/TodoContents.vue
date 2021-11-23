@@ -324,7 +324,7 @@ export default {
       @include flex(left, center);
       @include txtshadow(2px, 2px, 1px, rgba(0,0,0,0.25));
       flex-grow: 1;
-      color: #fff;
+      color: $color--white;
       font-size: 18px;
       margin-left: 10px;
       line-height: 150%;
@@ -339,7 +339,7 @@ export default {
       button {
         border-radius: 5px;
         background-color: #222222;
-        color: #fff;
+        color: $color--white;
         border: 0px;
         @include padding2(5px, 20px);
         margin-right: 10px;
@@ -473,7 +473,7 @@ export default {
       border: 0px;
       border-radius:0 6px 6px 0;
       background-color: #555555;
-      color: #ffffff;
+      color: $color--white;
       width: 60px;
       transition: background-color 0.3s;
       &:hover {
@@ -571,7 +571,7 @@ export default {
     transition: background-color 0.3s;
     &:hover {
       cursor: pointer;
-      background-color: #ffffff;
+      background-color: $color--white;
       border:1px solid #ddd;
     }
     dt {
@@ -605,7 +605,7 @@ export default {
             height: 50px;
             border: 0px;
             border-radius: 6px;
-            color: #ffffff;
+            color: $color--white;
             font-size: 28px;   
             transition: background-color 0.3s;    
             text-align: center;
@@ -659,7 +659,7 @@ export default {
         button {
           background-color: #333333;
           border: 0px;
-          color: #ffffff;
+          color: $color--white;
           @include padding2(6px, 10px);
           margin-right: 5px;
           transition: background-color 0.3s;

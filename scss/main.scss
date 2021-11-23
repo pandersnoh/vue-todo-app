@@ -55,6 +55,6 @@ body {
     @include flex(center, center);
   }
   a {
-    color: #fff;
+    color: $color--white;
   }
 }
