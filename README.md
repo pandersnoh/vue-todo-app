@@ -7,7 +7,7 @@ Vue.js를 이용하여 제작한 ToDo 애플리케이션 입니다.<br/>
 
 # 작업개요
 - 제작년도 : 2021년
-- 사용언어 : Vue.js, SASS(SCSS), Git/GitHub<br/>
+- 사용언어 : Vue.js, HTML, SASS(SCSS), JavaScript, Git/GitHub<br/>
 - 패키지 : Webpack
 - UI 프레임워크 : Bootstrap
 - 작업기여도 : 마크업 100% / 스크립트 100% / 디자인 100%
@@ -19,6 +19,7 @@ Vue.js를 이용하여 제작한 ToDo 애플리케이션 입니다.<br/>
 - Computed 단계에서 filter를 활용하여 "전체/진행중/완료" 별로 리스트 필터링 기능 구현
 - transition-group를 활용하여 모션 효과 구현
 - ToDo별로 세부적인 메모를 기록할 수 있는 항목 구현
+- 일부 CSS코드 중 재사용되는 부분은 SASS의 Mixin을 활용하여 
 
 # Webpack 기본 템플릿 정리
 
