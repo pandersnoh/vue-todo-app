@@ -343,7 +343,7 @@ export default {
       p {
         margin-bottom: 0px;
         span {
-          margin-left: 8px;
+          margin-left: 4px;
         }
       }
     }
@@ -353,8 +353,8 @@ export default {
         background-color: #222222;
         color: $color--white;
         border: 0px;
-        @include padding2(5px, 20px);
-        margin-right: 10px;
+        @include padding2(5px, 10px);
+        margin-right: 7px;
         letter-spacing: -0.03em;
         transition: background-color 0.3s;
         &:hover {
@@ -713,7 +713,7 @@ export default {
   @media (max-width: 767px) {
     .todo-date {
       .date-left p {
-        font-size: 14px;
+        font-size: 11px;
       }
       .date-right {
         button {
