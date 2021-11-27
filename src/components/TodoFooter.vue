@@ -39,7 +39,7 @@
         flex-grow: 0;
         margin-left: 10px;
         p {
-          text-align: left;
+          text-align: center;
         }
       }
       &::after {

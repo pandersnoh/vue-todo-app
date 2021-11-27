@@ -8,6 +8,9 @@
         <button @click="deleteAll()">
           전체 삭제
         </button>
+        <button @click="deleteFinished()">
+          선택 삭제
+        </button>
       </div>
     </div>
     <div class="todo-contents">
@@ -263,7 +266,7 @@ export default {
     deleteTodo(index) { // 할일 삭제
       const item = this.todos.indexOf(index)
       this.todos.splice(item, 1)
-    },
+    },  
     openMemo(index) { // 메모 열기
       const item = this.todos.indexOf(index)
       if(this.todos[item].memoShow == false) {
@@ -272,6 +275,15 @@ export default {
       else {
         this.todos[item].memoShow = false
       }      
+    },
+    deleteFinished() {
+        this.todos = this.todos.filter(this.inProgress)
+    },
+    inProgress(todo) {
+      return ! this.isFinished(todo)
+    },
+    isFinished(todo) {
+      return todo.finished
     },
     deleteAll() { // ToDo 전체 삭제
       if(this.todos == '') {
